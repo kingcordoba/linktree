@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Cordoba | Portafolio</title>
+<style>
+        body {
+            /* Ruta de tu imagen de fondo */
+            background-image: url('fondo.jpg'); 
+            
+            /* Ajustes para que el fondo sea responsive y "stealth" */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /* Capa oscura superior por si la imagen es muy clara, para que los botones resalten */
+            background-color: rgba(11, 11, 11, 0.85); 
+            background-blend-mode: overlay;
+
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 5px solid #096900;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* Sombra para despegar la foto del fondo */
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin: 15px 0 5px 0;
+            letter-spacing: 2px; /* Un toque más de espacio entre letras tipo marca */
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+        p {
+            color: #aaa; /* Un gris un poco más claro para que contraste con el fondo */
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+        .links-container {
+            width: 100%;
+            max-width: 400px;
+        }
+        .btn-link {
+            display: block;
+            background-color: rgba(255, 123, 0, 0.8); /* Botones ligeramente traslúcidos */
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado sobre tu fondo */
+        }
+        .btn-link-2 {
+            display: block;
+            background-color: rgba(1, 133, 1, 0.8); /* Botones ligeramente traslúcidos */
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado sobre tu fondo */
+        }
+        
+        /* Efecto de interacción para los botones naranjas */
+        .btn-link:hover {
+            background-color: #252525;
+            border-color: #555;
+            transform: translateY(-2px); /* El botón sube sutilmente al pasar el mouse o tocarlo */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+
+        /* NUEVO: Efecto de interacción para los botones verdes */
+        .btn-link-2:hover {
+            background-color: #252525;
+            border-color: #555;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tu foto de perfil / Logo de DJ -->
+    <img src="test.jpg" alt="King Cordoba" class="profile-img">
+
+    <h1>KING CORDOBA</h1>
+    <p>DJ</p>
+
+    <div class="links-container">
+        <!-- Tus enlaces del proyecto -->
+        <a href="https://canva.link/kingpresskit" class="btn-link" target="_blank">🎵 Press Kit Digital</a>
+        <a href="https://youtu.be/iqPlLb0k9k8?si=l3kkRdXv70Aj7zID" class="btn-link-2" target="_blank">▶️ Ultimo Set</a>
+        <a href="https://www.youtube.com/@kingcordoba_col" class="btn-link" target="_blank">🔴Youtube Canal</a>
+        <a href="https://www.tiktok.com/@kingcordoba_" class="btn-link-2" target="_blank">📸 Tiktok Oficial</a>
+        <a href="https://wa.me/573013864595" class="btn-link" target="_blank">📱 Contacto</a>
+    </div>
+
+</body>
+</html>
